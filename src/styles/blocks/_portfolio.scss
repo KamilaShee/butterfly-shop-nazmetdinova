@@ -1,0 +1,25 @@
+.portfolio-inner {
+  @include inner;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-title {
+
+  padding: 130px 400px 115px;
+
+
+  font-family: $font;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  color: $color-dark;
+}
+
+
+.portfolio-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
