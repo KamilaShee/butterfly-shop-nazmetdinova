@@ -1,6 +1,20 @@
 .header {
   background-color: $color-dark;
-  padding: 40px;
+  padding: 8px 0px;
+  text-transform: uppercase;
+  font-family: $font;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+  }
+}
+
+.header-inner {
+  @include inner;
 }
 
 .header-wrap {
@@ -10,4 +24,19 @@
 
 .main-logo {
   margin-right: auto;
+
+  text-transform: capitalize;
+  font-size: 42px;
+  line-height: 57px;
+}
+
+.header-accent-box {
+  padding: 33px;
+  background-color: $color-accent;
+}
+
+.menu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
 }

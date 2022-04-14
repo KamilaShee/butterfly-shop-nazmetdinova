@@ -1,28 +1,52 @@
 .promo {
-  padding: 50px 0;
-  background-color: lightsteelblue;
-  border-radius: 10px;
+  background-image: url("../images/Rectangle\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-dark;
 }
 
 .promo-inner {
-  margin: 0 auto;
-  width: 1024px;
+  @include inner;
+  display: flex;
+  justify-content: center;
+}
 
-  @media (max-width: 1279px) {
-    width: auto;
-    max-width: 1024px;
+.promo-title {
+  margin-top: 200px;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 98px;
+  width: 1276px;
+  height: 196px;
+  text-align: center;
+  color: white;
+
+  @media (max-width: $tablet-max) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 44px;
   }
 }
 
-.promo-ttl {
-  font-size: $h1-fz-desktop;
-  font-weight: $h1-fw;
+.btn {
+  @include btn;
+  margin-top: 100px;
+  margin-bottom: 214px;
+  padding-top: 20px;
+  height: 104px;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
 
-  @media (max-width: 1279px) {
-    font-size: $h1-fz-tablet;
-  }
 
-  @media (max-width: 669px) {
-    font-size: $h1-fz-mobile;
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
   }
 }
+
